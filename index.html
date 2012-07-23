@@ -19,9 +19,9 @@
       <header>
         <h1>rstl</h1>
         <p>The Resource Oriented Template Language</p>
-        <p class="view"><a href="https://github.com/rstl">View the Project on GitHub <small>rstl</small></a></p>
+        <p class="view"><a href="https://github.com/rstl/rstl">View the Project on GitHub <small>rstl</small></a></p>
         <ul>
-          <li class="single"><a href="">View On <strong>GitHub</strong></a></li>
+          <li class="single"><a href="https://github.com/rstl/rstl">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
@@ -30,16 +30,16 @@
 <p>The Resource Oriented Template Language (<em>rstl</em> pronounced <em> \'rest-əl\ </em>) allows web developers to build web sites using a simple template language syntax inspired by Django templates. The template language features template and site inheritance and allows the layout and structure of pages in the web application to be cleanly separated from the resources that make up a page. The template engine has bindings for Java, which allows developers to render these templates in any Java based application or application server.</p>
 
 <div class="highlight">
-<pre><span class="cp">{%</span> <span class="k">extends</span> <span class="s2">"basictemplate.html"</span><span class="cp">%}</span><span class="x"></span>
-<span class="cp">{%</span> <span class="k">layout</span> <span class="s2">"layouts/213layout.html"</span><span class="cp">%}</span><span class="x"></span>
+<pre><span class="cp">{%</span> <span class="k">extends</span> <span class="s2">"basictemplate.html"</span><span class="cp"> %}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">layout</span> <span class="s2">"layouts/213layout.html"</span><span class="cp"> %}</span><span class="x"></span>
 
 <span class="cp">{%</span> <span class="k">block</span> <span class="nv">leftnav</span> <span class="cp">%}</span><span class="x"></span>
-<span class="x">   </span><span class="cp">{%</span> <span class="k">resource</span><span class="nv">.xhtml</span> <span class="s2">"/resources/categories"</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">   </span><span class="cp">{%</span> <span class="k">resource.xhtml</span> <span class="s2">"/resources/categories"</span> <span class="cp">%}</span><span class="x"></span>
 <span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x"></span>
 
 <span class="cp">{%</span> <span class="k">block</span> <span class="nv">mainbody</span> <span class="cp">%}</span><span class="x"></span>
-<span class="x">   </span><span class="cp">{%</span> <span class="k">resource</span><span class="nv">.xhtml</span> <span class="s2">"/resources/home/adbanner"</span> <span class="cp">%}</span><span class="x"></span>
-<span class="x">   </span><span class="cp">{%</span> <span class="k">resource</span><span class="nv">.xhtml</span> <span class="s2">"/resources/products/featured"</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">   </span><span class="cp">{%</span> <span class="k">resource.xhtml</span> <span class="s2">"/resources/home/adbanner"</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">   </span><span class="cp">{%</span> <span class="k">resource.xhtml</span> <span class="s2">"/resources/products/featured"</span> <span class="cp">%}</span><span class="x"></span>
 <span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x"></span>
 </pre>
 </div>
