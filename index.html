@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>rstl by rstl</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>rstl</h1>
+        <p>The Resource Oriented Template Language</p>
+        <p class="view"><a href="https://github.com/rstl">View the Project on GitHub <small>rstl</small></a></p>
+        <ul>
+          <li class="single"><a href="">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>Welcome to the Resource Oriented Template Language project.</h3>
+
+<p>The Resource Oriented Template Language (<em>rstl</em> pronounced <em> \'rest-əl\ </em>) allows web developers to build web sites using a simple template language syntax inspired by Django templates. The template language features template and site inheritance and allows the layout and structure of pages in the web application to be cleanly separated from the resources that make up a page. The template engine has bindings for Java, which allows developers to render these templates in any Java based application or application server.</p>
+
+<div class="highlight">
+<pre><span class="cp">{%</span> <span class="k">extends</span> <span class="s2">"basictemplate.html"</span><span class="cp">%}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">layout</span> <span class="s2">"layouts/213layout.html"</span><span class="cp">%}</span><span class="x"></span>
+
+<span class="cp">{%</span> <span class="k">block</span> <span class="nv">leftnav</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">   </span><span class="cp">{%</span> <span class="k">resource</span><span class="nv">.xhtml</span> <span class="s2">"/resources/categories"</span> <span class="cp">%}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x"></span>
+
+<span class="cp">{%</span> <span class="k">block</span> <span class="nv">mainbody</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">   </span><span class="cp">{%</span> <span class="k">resource</span><span class="nv">.xhtml</span> <span class="s2">"/resources/home/adbanner"</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">   </span><span class="cp">{%</span> <span class="k">resource</span><span class="nv">.xhtml</span> <span class="s2">"/resources/products/featured"</span> <span class="cp">%}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x"></span>
+</pre>
+</div>
+
+
+<h3>Authors and Contributors</h3>
+
+<p>The Resource Oriented Template Language was created by Madhu Chetuparambil (<a href="https://github.com/madchuck" class="user-mention">@madchuck</a>) in 2010 and was released as an open source project with the modified BSD license in 2012.</p>
+
+<h3>Support or Contact</h3>
+
+<p>Having trouble with <em>rstl</em>? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or create an issue at  <a href="https://github.com/rstl/rstl/issues">https://github.com/rstl/rstl/issues</a>.</p>
+      </section>
+    </div>
+    <footer>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    
+  </body>
+</html>
